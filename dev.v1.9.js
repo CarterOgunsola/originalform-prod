@@ -9266,12 +9266,10 @@ var no = (Je, We, ue) =>
   }
   function Xi(t, e) {
     return t.transformEl
-      ? e
-          .find(t.transformEl)
-          .css({
-            "backface-visibility": "hidden",
-            "-webkit-backface-visibility": "hidden",
-          })
+      ? e.find(t.transformEl).css({
+          "backface-visibility": "hidden",
+          "-webkit-backface-visibility": "hidden",
+        })
       : e;
   }
   function Gs({ swiper: t, duration: e, transformEl: n, allSlides: r }) {
