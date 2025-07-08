@@ -9586,12 +9586,10 @@ function Ir(n) {
 a(Ir, "effectInit");
 function Os(n, e) {
   return n.transformEl
-    ? e
-        .find(n.transformEl)
-        .css({
-          "backface-visibility": "hidden",
-          "-webkit-backface-visibility": "hidden",
-        })
+    ? e.find(n.transformEl).css({
+        "backface-visibility": "hidden",
+        "-webkit-backface-visibility": "hidden",
+      })
     : e;
 }
 a(Os, "effectTarget");
